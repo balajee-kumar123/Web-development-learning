@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .me{
+            color: rgb(237, 93, 15);
+        }
+        #you {
+            color: goldenrod;
+        }
+        #cartbag {
+            background-color: hsl(144, 71%, 44%);
+            border-radius: 10px;
+            border: none;
+            padding: 5px 15px;
+        }
+        #wishlist {
+            padding: 2px 30px;
+            border: 2px solid black;
+            border-radius: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <button id="cartbag" onclick="alert(`Your item is added to Bag!`)">Add to Bag</button>
+    <button id="wishlist" onclick="alert (`Your item is added to Wish list`)">❤️ WISH LIST</button><BR></BR><HR></HR>
+    <button >click</button>
+    <button class="me">click class</button>
+    <button id="you">click id</button>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias neque harum perspiciatis expedita blanditiis voluptas!</p>
+    <script>
+        // alert ("Welcome!")
+        // let gender = prompt("Enter your gender (m and f) =");
+        // let age = parseInt(prompt('enter your age ='));
+        // if (gender == 'f') {
+        //     if (age <= 5) {
+        //         console.log('Congratulations!! You got 100% Discount');            
+        //     }
+        //     else if (age > 65) {
+        //         console.log('Congratulations!! You got 70% Discount');                
+        //     }
+        //     else {
+        //         console.log('Congratulations!! You got 50% Discount');
+                
+        //     }
+        // }
+        // else if (gender == 'm') {
+        //     if (age <= 5) {
+        //         console.log('Congratulations!! You got 100% Discount');
+        //     }
+        //     else if (age <= 8) {
+        //         console.log('Congratulations!! You got 50% Discount');
+        //     }
+        //     else if (age > 65) {
+        //         console.log('You got 70% Discount');                
+        //     }
+        //     else {
+        //         console.log('No Discount');
+                
+        //     }
+            
+        // }
+
+
+
+    let gender = prompt("Enter your gender (m and f) =");
+    let age = parseInt(prompt("Enter your age ="));
+
+    let discount = 0; // store discount percentage
+
+    // Kids under 5 years free
+    if (age <= 5) {
+        discount = 100;
+    }
+
+    // Kids up to 8 years half ticket
+    else if (age <= 8) {
+        discount = 50;
+    }
+
+    // People over 65 years pay 30% (so 70% discount)
+    if (age > 65) {
+        discount = Math.max(discount, 70);
+    }
+
+    // Females get 50% off
+    if (gender === 'f') {
+        discount = Math.max(discount, 50);
+    }
+
+    // Final output
+    if (discount > 0) {
+        console.log(`Congratulations!! You got ${discount}% Discount`);
+    } else {
+        console.log('No Discount');
+    }
+        
+    </script>
+</body>
+</html>

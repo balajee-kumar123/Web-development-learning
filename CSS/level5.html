@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        #box1 {
+            height: 40px;
+            width: 60px;
+            background-color: green;
+            border-radius: 50%;
+            margin: 5px;
+            padding: 20px;
+        }
+        .box {
+            display: inline-block;
+            height: 100px;
+            width: 100px;
+            background-color: turquoise;
+            margin: 5px;
+            font-size: 25px;
+        }
+        #box2 {
+            position: fixed;
+            left: 200px;
+        }
+        #box3 {
+            position: absolute;
+            /* left: 100px;
+            top: 200px; */
+            z-index: 2;
+            background-color: aquamarine;
+        }
+        #box4 {
+            position: relative;
+            z-index: 1;
+            bottom: 15px;
+            left: 15px;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Products</a>
+            <a href="#">Contact</a>
+            <a href="#">Help</a>
+        </nav><hr>
+    </header>
+    <main>
+        <div id="box1">Welcome!</div><br><hr>
+        <div class="container">
+            <div id="box2" class="box">Oxford</div>
+            <div id="box3" class="box">Junior</div>
+            <div id="box4" class="box">English</div><br>
+        </div>
+
+        
+        
+    </main><br>
+    <footer style="position: fixed; background-color: aqua; bottom: 0px; ">eyery</footer>
+    
+</body>
+</html>

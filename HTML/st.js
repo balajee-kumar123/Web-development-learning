@@ -263,13 +263,81 @@ let company = ["Bloomberg", "Microsoft", "Uber", "Google", "JBM", "netflix"]
 //     i++
 // }
 
-let bttn = document.createElement("button");
-bttn.innerText = "click me!";
-console.log(bttn);
-bttn.style.color = "red"
+// let bttn = document.createElement("button");
+// bttn.innerText = "click me!";
+// // console.log(bttn);
+// bttn.style.color = "white"
 
-let add2 = document.querySelectorAll("div")[1];
-add2.append(bttn)
-console.dir(add2)
+// let add2 = document.querySelector("body");
+// add2.append(bttn)
+// console.dir(add2)
+
+// let parag = document.createElement("p");
+
+// let Hero1 = document.querySelector("p");
+
+// H12 = Hero1.getAttribute("class")
+// console.log(H12);
+
+//// Hero1.setAttribute("class", "zero")
+
+// Hero1.classList.add("zero")
+// H13 = Hero1.classList
+// console.dir(H13)
+
+// let Hi23 = document.querySelector("#Bye");
+// let CurrentMode = "Light"
+
+// Hi23.addEventListener("click", () => {
+//     if (CurrentMode === "Light") {
+//         CurrentMode = "Dark"
+//         document.querySelector("body").style.background = "red"
+
+//     } else {
+//         CurrentMode = "Light";
+//         document.querySelector("body").style.background = "green"
+//     }
+//     console.log(CurrentMode);
 
 
+
+// });
+
+
+// const Manager = {
+//     // firstend: 25000,
+//     // backend: 40000,
+//     // fullstack: 60000,
+//     // designer: 30000,
+//     totalsal: function () {
+//         console.log("Total Budget is 10 lakh")
+
+//     }
+// }
+// const blinkit = {
+//     balajee: "yes",
+// }
+
+// blinkit.__proto__ = Manager
+
+
+// class user {
+//     constructor(name, email) {
+//         this.name = (name)
+//         this.email = (email)
+//     }
+//     viewdata() {
+//         console.log("See my data");
+
+//     }
+// }
+
+// let viewdata1 = new user("BAlajee", "balajeekumar627@gmail.com")
+// // viewdata.name("Balajee kumar")
+// console.log(viewdata1);
+
+
+
+class user {
+    uuuuu
+}
